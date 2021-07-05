@@ -1,0 +1,36 @@
+.definitaion-task {
+    padding: 15px;
+    .title-task {
+        label {
+            width: 130px;
+        }
+        input {
+            width: 30% !important;
+        }
+    }
+    .description-task {
+        margin-top: 2rem;
+        label {
+            width: 130px;
+        }
+        textarea {
+            width: 30%;
+        }
+    }
+    .btn-add-task {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        button {
+            background: teal;
+            color: white;
+            font-size: 14px;
+            width: 110px;
+            height: 39px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}

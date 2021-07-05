@@ -1,0 +1,61 @@
+.p-tabview-nav {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    list-style: none;
+    padding: 15px;
+    border: 2px solid #dadbdd;
+    margin-bottom: 2rem !important;
+    // .p-tabview-nav {
+    //     margin-bottom: 2rem;
+    // }
+    li.p-unselectable-text {
+        position: relative;
+        width: 15%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        a {
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            cursor: pointer !important;
+        }
+        &.p-tabview-selected.p-highlight {
+            transition: all 0.4s ease;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 65%;
+                top: 51px;
+                height: 2px;
+                background: teal;
+                z-index: 423;
+                left: 18%;
+            }
+            a {
+                font-weight: bold;
+                color: teal;
+            }
+        }
+    }
+    // .p-unselectable-text.p-tabview-selected.p-highlight {}
+    .p-tabview-ink-bar {
+        display: none !important;
+    }
+}
+
+.viewTaskList {
+    ul {
+        transition: all 0.3s ease;
+    }
+    // ul:hover {
+    //     transform: translateX(9px);
+    // }
+    & ul:nth-child(even) {
+        background-color: #eaeaea;
+    }
+    & ul:nth-child(odd) {
+        background-color: white;
+    }
+}
